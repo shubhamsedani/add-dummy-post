@@ -46,9 +46,6 @@ if (!defined('ADP_SETTINGS_TABLE')) {
 // Include custom function file for backend
 include ADP_ADMIN_DIR . '/includes/adp-back-end-custom-functions.php';
 
-// Include custom function file for frontend
-include ADP_FRONT_DIR . '/includes/adp-front-end-custom-functions.php';
-
 function adp_load_scripts()
 {
     wp_enqueue_style('adp_custom_css', ADP_URL . 'backend/assets/public-style.css');
@@ -99,7 +96,7 @@ function adp_install()
  */
 function adp_deactivate()
 {
-
+    // Function runs when the it get delete
 }
 
 /**

@@ -1,4 +1,5 @@
 <?php
+
 // Exit if accessed directly
 if (!defined('ABSPATH')) {
     exit;
@@ -35,4 +36,3 @@ function adp_register_my_session()
 }
 
 add_action('init', 'adp_register_my_session');
-?>
